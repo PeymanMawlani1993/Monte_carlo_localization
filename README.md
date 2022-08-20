@@ -50,6 +50,9 @@ Particle Filter and Monte Carlo Localization (Cyrill Stachniss Youtube Channel) 
 
 ### how to use this respository?
 
+<p align="justify">As it is mentioned, to improve the efficiency of the MCL algorithm, the simulated sensor data are prepared offline. Hence before running the Roslaunch file, the user must run the precaching.py script, then a data.txt will be generated. We have used this txt file in the Roslaunch file.
+This simulation is designed for Ros2 turtlebot3; however, it is valid for other simulation environments by changing some essential items, such as the size of the map (the map should be added for new environments), the name of topics, etc.</p>
+
 
 
 

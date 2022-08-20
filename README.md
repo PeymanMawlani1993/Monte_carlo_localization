@@ -28,9 +28,13 @@ Moreover, the observation model must be presented for each particle, leading to 
 
 #### observation:
 
-p align="justify"> observation play the role of pose correction (correction is more common in Kalamn Filter localization). In observation phase,the robot observe the world related to the   </p>
+<p align="justify"> Observation plays a pose correction role (correction is more common in Kalman Filter localization). In the observation phase, the robot observes the world related to the position it is located. In Gazebo/turtlebot3, the range finder sensor with 360 beams is used to observe the world.
+ At time t, the motion is predicted for each particle, then based on their pose, the pre-caching data obtained off-line is called. Afterward, the error can be calculated for each particle by comparing those data with the actual range finder data. Finally, the weighted array is computed based on the error so that each weighted element attributes to a particle.</p>
+ 
+#### stochastic universal sampling (SUS) algorithm:
+<p align="justify"> For this implementation, the SUS algorithm is exploited for the resampling phase of particles. It basically prioritizes those particles with high normalized weights. The idea behind this algorithm is simple; it represents the probability of repopulating a sample based on its weight. For example, the likelihood of re-producing a particle with a normalized weight of 0.4 is almost four times more than a particle with a normalized weight of 0.1.</p>
 
-
+<p align="justify">the algorithm below illustrates the SUS resampling:</p>
 
 
 

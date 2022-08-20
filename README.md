@@ -26,7 +26,9 @@ Moreover, the observation model must be presented for each particle, leading to 
 
 ![My Image](supplimentary/2.png)
 
+#### observation:
 
+p align="justify"> observation play the role of pose correction (correction is more common in Kalamn Filter localization). In observation phase,the robot observe the world related to the   </p>
 
 
 

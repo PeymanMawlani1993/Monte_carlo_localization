@@ -1,0 +1,18 @@
+<launch>
+    <arg name="my_map" default="$(find robot_laser_grid_mapping)/maps/map.yaml"/>
+    
+    <node pkg="just_for_learning"  type="monte_carlo_github.py" name="monte_carlo_localization" output="screen">
+    <param name="precaching" value="$(find just_for_learning)/resources/data.txt" />
+    </node>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(arg my_map)"></node>
+    <node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 0 0 0 1 map odom 100" />
+    <node pkg="teleoperat1" type="key_to_twist.py" name="keys_to_twist" ></node>
+    <node pkg="teleoperat1" type="keyboard_drive.py" name="keyboard_driver" launch-prefix="xterm -e"/>
+
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch" ></include>
+
+    <include file="$(find turtlebot3_bringup)/launch/turtlebot3_model.launch"></include>
+
+
+
+</launch>

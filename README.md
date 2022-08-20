@@ -17,6 +17,15 @@ Moreover, the observation model must be presented for each particle, leading to 
 <p align="justify"> the motion model is based on velocity motion model presented in Probablstic Robotics: Sebastian Thrun et al.
  at time t the translational and rotational veolcities is presented as </p>
  
+![My Image](supplimentary/1.png)
+<p align="justify">in real world all sensor data are subject to noise, so to have a simulation close to real world, some noise are added to velocities as following,</p>
+
+![My Image](supplimentary/3.png)
+
+<p align="justify"> after time delta t the robot will locate at new pose as,</p>
+
+![My Image](supplimentary/2.png)
+
 
 
 

@@ -36,10 +36,19 @@ Moreover, the observation model must be presented for each particle, leading to 
 
 <p align="justify">the algorithm below illustrates the SUS resampling:</p>
 
+![My Image](supplimentary/index.png)
+#####################################################################################
+#### References:
 
+Zhang, L., Zapata, R., & Lépinay, P. (2012). Self-adaptive Monte Carlo localization for mobile robots using range finders. Robotica, 30(2), 229-244. doi:10.1017/S0263574711000567
 
+Thrun, S., Burgard, W., & Fox, D. (2005). Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series), ser. Intelligent robotics and autonomous agents.
 
+Particle Filter and Monte Carlo Localization (Cyrill Stachniss Youtube Channel) https://www.youtube.com/watch?v=MsYlueVDLI0
 
+###########################################################################################################################
+
+### how to use this respository?
 
 
 

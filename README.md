@@ -11,13 +11,13 @@ Moreover, the observation model must be presented for each particle, leading to 
 <p align="justify"> The proposed MCL algorithm is based on four steps, initialization, motion model (prediction), observation (correction), and resampling.</p>
 
 #### initialization:
- <p align="justify"> The algorithm remedies the global localization; for this measure, the particles are distributed all over the map, meaning the robot does not know anything about its location at the beginning.
-</p>
-#### motion model:
+ <p align="justify"> The algorithm remedies the global localization; for this measure, the particles are distributed all over the map, meaning the robot does not know anything about its location at the beginning.</p>
+ 
+#### velocity motion model:
 <p align="justify"> the motion model is based on velocity motion model presented in Probablstic Robotics: Sebastian Thrun et al.
- at time t the translational and rotational veolcities is presented as 
-  <img src="/Pictures/1.png" width="350" title="hover text">
-</p>
+ at time t the translational and rotational veolcities is presented as </p>
+ 
+
 
 
 

@@ -1,7 +1,7 @@
 # Monte_carlo_localization
 MCL Implementation for turtlebot3 localization in Ros/gazebo environmnet
 ########################################################################
-
+![Watch the video](supplimentary/)]
 ## **_what is monte-carlo-localization?_**
 ### introduction:
 <p align="justify"> Monte Carlo localization (MCL) is one of the crucial approaches for robotics localization based on particle distribution over the pre-defined map. This distribution relies on the weighted scheme for each particle. MCL approach has gained attention to remedy the global localization and kidnapping problem. However, MCL suffers from computational complexity, resulting in a delay in acquiring the accurate pose of the robot. The majority of complexity stems from the map dimension, which requires a large number of particles.
